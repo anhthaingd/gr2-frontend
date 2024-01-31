@@ -74,7 +74,10 @@ const Header = () => {
                                     <img src={`/userPhotos/${activeUser.photo}`} alt={activeUser.username} />
 
                                 } */}
-                <img src="login.png" alt="thai" />
+                <img
+                  src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg"
+                  alt="thai"
+                />
                 <div className="sub-profile-wrap  ">
                   <Link className="profile-link" to="/profile">
                     {" "}

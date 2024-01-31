@@ -10,6 +10,9 @@ import CveDetail from "./pages/CveDetail";
 import CweDetail from "./pages/CweDetail";
 import CapecDetail from "./pages/CapecDetail";
 import AddStory from "./components/storyScreen/AddStory";
+import PostDetail from "./pages/PostDetail";
+import EditStory from "./components/storyScreen/EditStory";
+import Profile from "./pages/Profile";
 function App() {
   return (
     <Router>
@@ -21,6 +24,9 @@ function App() {
             <Route exact path="/cwes/:cweId" element={<CweDetail />} />
             <Route exact path="/capecs/:capecId" element={<CapecDetail />} />
             <Route exact path='/addstory' element={<AddStory />} />
+            <Route exact path="/post/:postId" element={<PostDetail />} />
+            <Route exact path="/post/:postId/edit" element={<EditStory />} />
+            <Route exact path="/profile" element={<Profile />} />
             {/* <Route path="*" element={<NotFound />} />
 
             <Route exact path="/" element={<PrivateRoute />}>

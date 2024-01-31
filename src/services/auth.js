@@ -8,6 +8,8 @@ export const apiRegister = (payload) =>
         url: "/api/v1/auth/register",
         data: payload,
       });
+      console.log(response);
+      localStorage.setItem("userId", response.data.userId);
       resolve(response);
     } catch (error) {
       reject(error);

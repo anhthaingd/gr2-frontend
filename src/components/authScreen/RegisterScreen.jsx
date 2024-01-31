@@ -20,7 +20,7 @@ const RegisterScreen = () => {
   const { isLoggedIn } = useSelector((state) => state.auth);
 
   useEffect(()=>{
-    isLoggedIn && navigate('/')
+    isLoggedIn && navigate('/') 
   },[isLoggedIn])
   const registerHandler = async (e) => {
     e.preventDefault();
@@ -34,6 +34,7 @@ const RegisterScreen = () => {
       return setError("Passwords do not match");
     }
     dispatch(actions.register({ username, email, password }));
+
     // const response = await apiRegister({ username, email, password });
     // console.log(response);
 
